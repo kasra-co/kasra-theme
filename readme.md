@@ -41,7 +41,7 @@ Dan has plans to automate this; there is an S3-upload plugin for Webpack.
 
 ### Publishing
 
-When we are ready to publish, the workflow will be `npm publish`. This should make a `kasra-theme` module available on NPMJS.
+`npm run gh-pages` to publish the site to [https://kasra-theme.github.io]().
 
 To simulate publishing locally, run `npm link` in the root of this project, and run `npm link kasra-theme` in the root of the project that would install this module.
 
