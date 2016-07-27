@@ -1,0 +1,26 @@
+$highlight-color: #fa0;
+
+body {
+    font-family: Arial;
+    color: #333;
+}
+
+.highlight-tagged:hover {
+    color: #7af;
+
+    &::after {
+        margin: 0.5rem;
+        border: 1px solid $highlight-color;
+        border-radius: 0.25rem;
+        padding: 0.5rem;
+        color: $highlight-color;
+    }
+
+    &.component-title::after {
+        content: "A document title"
+    }
+
+    &.component-text::after {
+        content: "A document text section"
+    }
+}
