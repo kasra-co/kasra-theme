@@ -28,7 +28,7 @@ The specification spans multiple pages. Adding a new one involves creating a new
 1. If you are building something that requires some JS, then `require` it from `src/index.js`.
 1. HTML: Create a new standalone HTML page. See `views/typography` for an example.
   - `<link>` the page to the root stylesheet at `styles/index.scss`.
-  - Add a root-relative nav link from `views/index.html` to your new HTML file.
+  - Add a relative nav link from `views/index.html` to your new HTML file.
 1. Restart the dev server (`npm run dev` after killing the old one) and navigate to your page from [http://localhost:8080/webpack-dev-server/]().
 
 
