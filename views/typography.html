@@ -1,22 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Typography Specification</title>
-        <link rel="stylesheet" type="text/css" href="../styles/index.scss">
-        <script src="/index.js"></script>
-    </head>
-    <body>
-        <div class="grid grid--container">
-            <h1 class="component-title highlight-tagged">Arabic Title / عنوان العربية</h1>
-            <div class="row">
-                <div class="col col--sm">
-                    <p class="component-text highlight-tagged">Left column / العمود الأيسر</p>
-                </div>
-                <div class="col col--sm">
-                    <p class="component-text highlight-tagged">Right column / العمود الأيمن</p>
-                </div>
-            </div>
-        </div>
-    </body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Typography Specification</title>
+		<link rel="stylesheet" type="text/css" href="../styles/index.scss">
+		<script src="/index.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notokufiarabic.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notonaskharabic.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/railscasts.min.css">
+	</head>
+	<body>
+		<div class="grid grid--container">
+			<div class="row">
+				<div class="col col--md-3 col--lg-2">
+					Menu Here
+				</div>
+				<div class="col col--md-9 col--lg-10">
+					<h3 class="example_title">Headings</h3>
+						<div class="content">
+							<!-- display_1 -->
+							<div class="row example_item">
+								<div class="col col--sm-12">
+									<p>
+										Should always use <code>&lt;h1></code> tags.
+									</p>
+								</div>
+								<div class="col">
+									<div class="row">
+										<div class="col col--sm-3">
+											<strong class="label">Selector</strong>
+										</div>
+										<div class="col col--md-9">
+											<strong class="label">Output</strong>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col--md-3 col--sm-align-center">
+											<pre class="nohighlight"><code>.display_1</code></pre>
+										</div>
+										<div class="col col--md-9">
+											<h1 class="display_1">انفوجرافيك</h1>
+										</div>
+										<div class="col col--sm-12">
+											<p>
+												Current usage: <code class="nohighlight brand">.display_1</code> headings are used as <strong> landing page titles</strong>, and should be used as stand alone titles, for a group of content items.
+											</p>
+										</div>
+										<div class="col col--sm-12">
+											<div class="code_block">
+												<h3 class="code_title">Code Example</h3>
+												<pre class="html"><code>&lt;h1 class="display_1">انفوجرافيك&lt;/h1></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- display_1 end -->
+							<!-- display_2 -->
+							<div class="row example_item">
+								<div class="col">
+									<div class="row">
+										<div class="col col--sm-3">
+											<strong class="label">Selector</strong>
+										</div>
+										<div class="col col--md-9">
+											<strong class="label">Output</strong>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col--md-3 col--sm-align-center">
+											<pre class="nohighlight"><code>.display_2</code></pre>
+										</div>
+										<div class="col col--md-9">
+											<h2 class="display_2">2016-07-22</h2>
+										</div>
+										<div class="col col--sm-12">
+											<p>
+												Current usage: <code class="nohighlight brand">.display_2</code> headings are used as <strong> heading separators</strong> on the dashboards and on the team page. They should be used to define headings that separate related content, will likely be <code class="nohighlight">&lt;h2></code> tags.
+											</p>
+										</div>
+										<div class="col col--sm-12">
+											<div class="code_block">
+												<h3 class="code_title">Code Example</h3>
+												<pre class="html"><code>&lt;h2 class="display_2">شاركوها&lt;/h2></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- display_2 end -->
+							<!-- display_3 -->
+							<div class="row example_item">
+								<div class="col">
+									<div class="row">
+										<div class="col col--sm-3">
+											<strong class="label">Selector</strong>
+										</div>
+										<div class="col col--md-9">
+											<strong class="label">Output</strong>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col--md-3 col--sm-align-center">
+											<pre class="nohighlight"><code>.display_3</code></pre>
+										</div>
+										<div class="col col--md-9">
+											<h1 class="display_3">شاركوها</h1>
+										</div>
+										<div class="col col--sm-12">
+											<p>
+												Current usage: <code class="nohighlight brand">.display_3</code> headings are used as <strong> col/section headings</strong> on the home page and on the article page. Should be used to define secondary page content, will likely be <code class="nohighlight">&lt;h2></code> tags.
+											</p>
+										</div>
+										<div class="col col--sm-12">
+											<div class="code_block">
+												<h3 class="code_title">Code Example</h3>
+												<pre class="html"><code>&lt;h2 class="display_3">شاركوها&lt;/h2></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- display_3 end -->
+							<!-- display_4 -->
+							<div class="row example_item">
+								<div class="col">
+									<div class="row">
+										<div class="col col--sm-3">
+											<strong class="label">Selector</strong>
+										</div>
+										<div class="col col--md-9">
+											<strong class="label">Output</strong>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col--md-3 col--sm-align-center">
+											<pre class="nohighlight"><code>.display_4</code></pre>
+										</div>
+										<div class="col col--md-9">
+											<h1 class="display_4">قصة كسرة</h1>
+										</div>
+										<div class="col col--sm-12">
+											<p>
+												Current usage: <code class="nohighlight brand">.display_4</code> headings are used as <strong>static page titles</strong>. Should use <code class="nohighlight">&lt;h1></code> tags.
+											</p>
+										</div>
+										<div class="col col--sm-12">
+											<div class="code_block">
+												<h3 class="code_title">Code Example</h3>
+												<pre class="html"><code>&lt;h1 class="display_4">قصة كسرة&lt;/h1></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- display_4 end -->
+							<!-- section_heading -->
+							<div class="row example_item">
+								<div class="col">
+									<div class="row">
+										<div class="col col--sm-3">
+											<strong class="label">Selector</strong>
+										</div>
+										<div class="col col--md-9">
+											<strong class="label">Output</strong>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col--md-3 col--sm-align-center">
+											<pre class="nohighlight"><code>.section_heading</code></pre>
+										</div>
+										<div class="col col--md-9">
+											<h2 class="section_heading">هدف وثيقة سياسة ومعايير التحرير</h2>
+										</div>
+										<div class="col col--sm-12">
+											<p>
+												Current usage: <code class="nohighlight brand">.section_heading</code> are used as <strong>static page section headings</strong>. Should use <code class="nohighlight">&lt;h2></code> tags.
+											</p>
+										</div>
+										<div class="col col--sm-12">
+											<div class="code_block">
+												<h3 class="code_title">Code Example</h3>
+												<pre class="html"><code>&lt;h2 class="section_heading">هدف وثيقة سياسة ومعايير التحرير&lt;/h2></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- section_heading end -->
+							<!-- sub_heading -->
+							<div class="row example_item">
+								<div class="col">
+									<div class="row">
+										<div class="col col--sm-3">
+											<strong class="label">Selector</strong>
+										</div>
+										<div class="col col--md-9">
+											<strong class="label">Output</strong>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col--md-3 col--sm-align-center">
+											<pre class="nohighlight"><code>.sub_heading</code></pre>
+										</div>
+										<div class="col col--md-9">
+											<h3 class="sub_heading">1.1 المعلومات والحقائق</h3>
+										</div>
+										<div class="col col--sm-12">
+											<p>
+												Current usage: <code class="nohighlight brand">.sub_heading</code> are used as <strong>static page sub headings and article page sub headings</strong>. They should use <code class="nohighlight">&lt;h3></code> tags.
+											</p>
+										</div>
+										<div class="col col--sm-12">
+											<div class="code_block">
+												<h3 class="code_title">Code Example</h3>
+												<pre class="html"><code>&lt;h3 class="sub_heading">1.1 المعلومات والحقائق&lt;/h3></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- sub_heading end -->
+							<!-- title -->
+							<div class="row example_item">
+								<div class="col">
+									<div class="row">
+										<div class="col col--sm-3">
+											<strong class="label">Selector</strong>
+										</div>
+										<div class="col col--md-9">
+											<strong class="label">Output</strong>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col--md-3 col--sm-align-center">
+											<pre class="nohighlight"><code>.title</code></pre>
+										</div>
+										<div class="col col--md-9">
+											<h1 class="title">اختيار ساعة اليد ليس مشكلة لأنك ستعرف كيف تختارها في 3 نقاط فقط</h1>
+										</div>
+										<div class="col col--sm-12">
+											<p>
+												Current usage: <code class="nohighlight brand">.title</code> are used as <strong>titles on article pages</strong>. They should use <code class="nohighlight">&lt;h1></code> tags.
+											</p>
+										</div>
+										<div class="col col--sm-12">
+											<div class="code_block">
+												<h3 class="code_title">Code Example</h3>
+												<pre class="html"><code>&lt;h1 class="title">اختيار ساعة اليد ليس مشكلة لأنك ستعرف كيف تختارها في 3 نقاط فقط&lt;/h1></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- title end -->
+							<!-- hook -->
+							<div class="row example_item">
+								<div class="col">
+									<div class="row">
+										<div class="col col--sm-3">
+											<strong class="label">Selector</strong>
+										</div>
+										<div class="col col--md-9">
+											<strong class="label">Output</strong>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col--md-3 col--sm-align-center">
+											<pre class="nohighlight"><code>.hook</code></pre>
+										</div>
+										<div class="col col--md-9">
+											<h2 class="hook">هل كل الساعات ستناسبك؟</h2>
+										</div>
+										<div class="col col--sm-12">
+											<p>
+												Current usage: <code class="nohighlight brand">.hook</code> are used as <strong>hooks on article pages</strong>. They should use <code class="nohighlight">&lt;h2></code> tags.
+											</p>
+										</div>
+										<div class="col col--sm-12">
+											<div class="code_block">
+												<h3 class="code_title">Code Example</h3>
+												<pre class="html"><code>&lt;h2 class="hook">هل كل الساعات ستناسبك؟&lt;/h2></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- hook end -->
+							<!-- suggested title -->
+							<div class="row example_item">
+								<div class="col">
+									<div class="row">
+										<div class="col col--sm-3">
+											<strong class="label">Selector</strong>
+										</div>
+										<div class="col col--md-9">
+											<strong class="label">Output</strong>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col--md-3 col--sm-align-center">
+											<pre class="nohighlight"><code>.suggested--title</code></pre>
+										</div>
+										<div class="col col--md-9">
+											<h2 class="suggested--title">لأن رموشك من أسرار سعادتك تعرّفي على آخر المستجدات في عالم الرموش واستبدلي الصمغ بالمغناطيس!</h2>
+										</div>
+										<div class="col col--sm-12">
+											<p>
+												Current usage: <code class="nohighlight brand">.suggested--title</code> are used as <strong>titles for recommended and related article cards</strong> on the article pages. They should use <code class="nohighlight">&lt;h2></code> tags. Due to column width these titles would normally wrap.
+											</p>
+										</div>
+										<div class="col col--sm-12">
+											<div class="code_block">
+												<h3 class="code_title">Code Example</h3>
+												<pre class="html"><code>&lt;h2 class="suggested--title">لأن رموشك من أسرار سعادتك تعرّفي على آخر المستجدات في عالم الرموش واستبدلي الصمغ بالمغناطيس!&lt;/h2></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- suggested title end -->
+							<!-- card title -->
+							<div class="row example_item">
+								<div class="col">
+									<div class="row">
+										<div class="col col--sm-3">
+											<strong class="label">Selector</strong>
+										</div>
+										<div class="col col--md-9">
+											<strong class="label">Output</strong>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col--md-3 col--sm-align-center">
+											<pre class="nohighlight"><code>.card--title</code></pre>
+										</div>
+										<div class="col col--md-9">
+											<h2 class="card--title">تصوير لقطة رائعة يدفع المصورين إلى أفعال غير عقلانية مطلقاً. بالصور</h2>
+										</div>
+										<div class="col col--sm-12">
+											<p>
+												Current usage: <code class="nohighlight brand">.card--title</code> are used as <strong>titles for article cards</strong> on the home page, landing pages, and author bio pages. They should use <code class="nohighlight">&lt;h2></code> tags. Due to column width these titles would normally wrap.
+											</p>
+										</div>
+										<div class="col col--sm-12">
+											<div class="code_block">
+												<h3 class="code_title">Code Example</h3>
+												<pre class="html"><code>&lt;h2 class="card--title">تصوير لقطة رائعة يدفع المصورين إلى أفعال غير عقلانية مطلقاً. بالصور&lt;/h2></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- card title end -->
+							<!-- card hook -->
+							<div class="row example_item">
+								<div class="col">
+									<div class="row">
+										<div class="col col--sm-3">
+											<strong class="label">Selector</strong>
+										</div>
+										<div class="col col--md-9">
+											<strong class="label">Output</strong>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col--md-3 col--sm-align-center">
+											<pre class="nohighlight"><code>.card--hook</code></pre>
+										</div>
+										<div class="col col--md-9">
+											<h2 class="card--hook">التخمين الخاطئ قد يهدد سلامة الجوال!</h2>
+										</div>
+										<div class="col col--sm-12">
+											<p>
+												Current usage: <code class="nohighlight brand">.card--hook</code> are used as <strong>titles for article cards</strong> on the home page, landing pages, and author bio pages. They should use <code class="nohighlight">&lt;h2></code> tags. Due to column width these titles would normally wrap.
+											</p>
+										</div>
+										<div class="col col--sm-12">
+											<div class="code_block">
+												<h3 class="code_title">Code Example</h3>
+												<pre class="html"><code>&lt;h2 class="card--hook">التخمين الخاطئ قد يهدد سلامة الجوال!&lt;/h2></code></pre>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- card hook end -->
+						</div>
+					</div>
+					<!-- headings end -->
+				</div>
+			</div>
+		</div>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+	</body>
 </html>

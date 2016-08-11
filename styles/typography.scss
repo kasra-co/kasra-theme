@@ -1,26 +1,95 @@
-$highlight-color: #fa0;
+$kufi: 'Noto Kufi Arabic', sans-serif;
+$naskh: 'Noto Naskh Arabic', sans-serif;
 
-body {
-    font-family: Arial;
-    color: #333;
+.display_1,
+.display_2,
+.display_3,
+.display_4,
+.section_heading,
+.hook,
+.suggested--title,
+.card--title,
+.card--hook {
+	font-family: $kufi;
+	font-weight: normal;
 }
 
-.highlight-tagged:hover {
-    color: #7af;
-
-    &::after {
-        margin: 0.5rem;
-        border: 1px solid $highlight-color;
-        border-radius: 0.25rem;
-        padding: 0.5rem;
-        color: $highlight-color;
-    }
-
-    &.component-title::after {
-        content: "A document title"
-    }
-
-    &.component-text::after {
-        content: "A document text section"
-    }
+.display_1,
+.display_2 {
+	color: $grey;
+	display: flex;
+	align-items: flex-start;
+}
+.display_1 {
+	font-size: 2.75rem;
+	text-align: center;
+	&:before,
+	&:after {
+		background: $light_grey;
+		content: '';
+		flex: auto;
+		// best practice instead of using flex-grow: 1; flex: grow, shrink, basis
+		height: 1px;
+		margin: auto;
+	}
+	&:after {
+		margin-left: 1rem;
+	}
+	&:before {
+		margin-right: 1rem;
+	}
+}
+.display_2 {
+	text-align: right;
+	font-size: 1rem;
+	&:after {
+		content: '';
+		flex: auto;
+		height: 1px;
+		background: $light_grey;
+		margin: auto;
+		margin-right: 1rem;
+	}
+}
+.display_3 {
+	border-bottom: 1px solid $orange;
+	color: $orange;
+	font-size: 1.5rem;
+	padding-bottom: 0.5rem;
+	text-align: right;
+}
+.display_4 {
+	font-size: 2.125rem;
+	line-height: 1.885;
+	margin-bottom: 1rem;
+}
+.section_heading {
+	font-size: 1.5rem;
+	line-height: 1.875;
+}
+.sub_heading {
+	font-size: 1.375rem;
+	line-height: 2.065;
+	font-family: $naskh;
+}
+.title {
+	font-size: 1.625rem;
+	line-height: 1.875;
+	font-family: $kufi;
+}
+.hook {
+	font-size: 1rem;
+}
+.suggested--title {
+	font-size: 1rem;
+}
+.card--title {
+	font-size: 1.25rem;
+	line-height: 1.75;
+}
+.card--hook {
+	font-size: 0.7rem;
+	line-height: 1.6;
+	margin-bottom: 1rem;
+	color: $grey;
 }
